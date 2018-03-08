@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<html>
+
+
+<head>
+  <script src="js/p5.js"></script>
+  <script src="js/p5.dom.js"></script>
+  <script src="js/shot_helper.js"></script>
+  <script src="js/function.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <style> body {padding: 0; margin: 0;} </style>
+</head>
+<body>
+  <div class="center">
+    <h3>Shot helper</h3>
+    <input type="number" id="myNumber" placeholder="Score ?" value="72" onsubmit="submit_click()"></input>
+    <button class="button_compute" id="go" onClick="button_compute()">></button>
+    <button class="button" id="button1" onClick="button_click1()">-</button>
+    <button class="button" id="button2" onClick="button_click2()">-</button>
+    <button class="button" id="button3" onClick="button_click3()">-</button>
+    <button class="button" id="button4" onClick="button_click4()">-</button>
+  </div>
+  <div id='myContainer' class="canvas"></div>
+  <div class="center">
+    <a class="button_link" href="index.html">Menu</a>
+  </div>
+</body>
+</html>

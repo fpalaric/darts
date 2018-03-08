@@ -1,0 +1,3 @@
+rajout de shot helper,
+bouton undo,
+501
