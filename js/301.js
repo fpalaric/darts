@@ -129,14 +129,14 @@ function button_register(){
 	cell1.innerHTML=document.getElementById("score").value; // Insert the value 
 	var cell2=table.rows[index].cells[table.rows[index].cells.length-1];
 	cell2.innerHTML=cell2.innerHTML-cell1.innerHTML; // Modify the 301 value (301-inserted score)
-	if (cell2.innerHTML<0)
-		{
-			cell2.innerHTML=cell2.innerHTML+cell1.innerHTML; // We don't admit negatives values.
-		}
-		if (cell2.innerHTML==0)
-		{
-			// TODO link to a html page who says "player i won" + save of the game
-		}
+	// if (cell2.innerHTML<0)
+		// {
+			// cell2.innerHTML=cell2.innerHTML+cell1.innerHTML; // We don't admit negatives values.
+		// }
+	// if (cell2.innerHTML==0)
+		// {
+			//TODO link to a html page who says "player i won" + save of the game
+		// }
 	// Construct the string used to save the data (see top of the code to see the format used)
 	save="temp_301";
 	for(let i=0; i<table.rows.length; i++){
