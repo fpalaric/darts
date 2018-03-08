@@ -135,7 +135,7 @@ function button_register(){
 				cell2.innerHTML=result+cell1.innerHTML;
 			}
 		else {cell2.innerHTML = result;}
-		if (cell2==0)
+		if (result==0)
 			{
 				//TODO : display player i win and save the game
 			}
