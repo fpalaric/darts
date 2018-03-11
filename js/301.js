@@ -109,12 +109,14 @@ function enter_player(){
 	document.getElementById("undo").style.display = "inline-block";
 	// Insert the table with the players name and the 301 cell
 	let table = document.getElementById("table");
+	let row = table.insertRow();
 	for (let i=0; i<pnumber; i++){
-		let row = table.insertRow();
 		var cell = row.insertCell();
 		cell.innerHTML = aplayer[i];
-		row;
-		cell;
+	}
+	let row = table.insertRow();
+	for (let i=0; i<pnumber; i++){
+		var cell = row.insertCell();
 		cell.innerHTML = 301;
 		cell.style.color="red";
 	}
