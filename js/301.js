@@ -127,14 +127,15 @@ function button_register(){
 		let index=select.selectedIndex; 	//Get the index of the selected player (index = table row)
 		let table = document.getElementById("table");
 		var cell1 = table.rows[index].insertCell(table.rows[index].cells.length-1); // Insert a cell in second to last position
-		cell1.innerHTML=document.getElementById("score").value; // Insert the value 
+		var score=document.getElementById("score").value; // Insert the value 
 		var cell2=table.rows[index].cells[table.rows[index].cells.length-1];
-		var result = cell2.innerHTML-cell1.innerHTML; // Modify the 301 value (301-inserted score)
-		if (result < 0)
+		var result = cell2.innerHTML-score; // Modify the 301 value (301-inserted score)
+		if (result > 0)
 			{
-				cell2.innerHTML=result+cell1.innerHTML;
+				cell2.innerHTML = result;
+				cell1.innerHTML = score;
 			}
-		else {cell2.innerHTML = result;}
+		else {}
 		if (result==0)
 			{
 				//TODO : display player i win and save the game
