@@ -114,7 +114,7 @@ function enter_player(){
 		var cell = row.insertCell();
 		cell.innerHTML = aplayer[i];
 	}
-	let row = table.insertRow();
+	row = table.insertRow();
 	for (let i=0; i<pnumber; i++){
 		var cell = row.insertCell();
 		cell.innerHTML = 301;
